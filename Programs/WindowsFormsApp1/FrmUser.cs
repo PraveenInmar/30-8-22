@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class FrmUser : Form
+    {
+        public FrmUser()
+        {
+            InitializeComponent();
+        }
+
+        private void Verifybutton_Click(object sender, EventArgs e)
+        {
+            string gender = "";
+            string status = "";
+
+            if(MaleRadioButton.Checked)
+            {
+                gender = "Male";
+            }
+            else
+            {
+                gender = "Female";
+            }
+            if(SingleRadioButton.Checked)
+            {
+                status = "Single";
+            }
+            else
+            {
+                status = "Married";
+            }
+            FrmVerify fv = new FrmVerify();
+            fv.setValues(FirstNameInputBox.Text, LastNameInputBox.Text, AgeInputBox.Text, gender, status );
+        }
+    }
+}

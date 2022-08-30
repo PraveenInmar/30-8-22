@@ -1,0 +1,13 @@
+C:\Users\pkumar\source\repos\Lab1\BusPass\bin\Debug\BusPass.exe.config
+C:\Users\pkumar\source\repos\Lab1\BusPass\bin\Debug\BusPass.exe
+C:\Users\pkumar\source\repos\Lab1\BusPass\bin\Debug\BusPass.pdb
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.csproj.AssemblyReference.cache
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.BusPassForm.resources
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.EntryForm.resources
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.Properties.Resources.resources
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.SearchBusPass.resources
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.VerifyBuspass.resources
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.csproj.GenerateResource.cache
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.csproj.CoreCompileInputs.cache
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.exe
+C:\Users\pkumar\source\repos\Lab1\BusPass\obj\Debug\BusPass.pdb
