@@ -135,7 +135,7 @@ namespace BusPass
             // VM
             // 
             this.VM.AutoSize = true;
-            this.VM.Location = new System.Drawing.Point(209, 248);
+            this.VM.Location = new System.Drawing.Point(209, 260);
             this.VM.Name = "VM";
             this.VM.Size = new System.Drawing.Size(0, 20);
             this.VM.TabIndex = 10;
@@ -143,7 +143,7 @@ namespace BusPass
             // VA
             // 
             this.VA.AutoSize = true;
-            this.VA.Location = new System.Drawing.Point(209, 181);
+            this.VA.Location = new System.Drawing.Point(209, 191);
             this.VA.Name = "VA";
             this.VA.Size = new System.Drawing.Size(0, 20);
             this.VA.TabIndex = 11;

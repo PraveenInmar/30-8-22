@@ -12,7 +12,7 @@ namespace BusPass
 {
     public partial class EntryForm : Form
     {
-        private int childFormNumber = 0;
+      //  private int childFormNumber = 0;
 
         public EntryForm()
         {

@@ -22,11 +22,13 @@ namespace BusPass
 
         }
 
-        public void setValues(string FirstName, string LastName, string Age, string Address, string gender, string status)
+        public void setValues(string FirstName, string LastName, string Age,string mobile, string Address, string gender, string status)
         {
+          
             VFN.Text = FirstName;
             VLN.Text = LastName;
             VA.Text = Age;
+            VM.Text = mobile;
             VADD.Text = Address;
             VG.Text = gender;
             VS.Text = status;

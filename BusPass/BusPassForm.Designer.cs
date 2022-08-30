@@ -41,14 +41,17 @@ namespace BusPass
             this.BPA = new System.Windows.Forms.TextBox();
             this.BPLN = new System.Windows.Forms.TextBox();
             this.BPG = new System.Windows.Forms.GroupBox();
-            this.FemaleradioButton = new System.Windows.Forms.RadioButton();
-            this.MaleradioButton1 = new System.Windows.Forms.RadioButton();
+            this.RadioFemale = new System.Windows.Forms.RadioButton();
+            this.RadioMale = new System.Windows.Forms.RadioButton();
             this.BPS = new System.Windows.Forms.GroupBox();
             this.UnMarriedradioButton = new System.Windows.Forms.RadioButton();
             this.MarriedradioButton = new System.Windows.Forms.RadioButton();
             this.Loginbutton = new System.Windows.Forms.Button();
+            this.dtgcustomer = new System.Windows.Forms.DataGridView();
+            this.deletebutton = new System.Windows.Forms.Button();
             this.BPG.SuspendLayout();
             this.BPS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgcustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // Registration
@@ -145,8 +148,8 @@ namespace BusPass
             // 
             // BPG
             // 
-            this.BPG.Controls.Add(this.FemaleradioButton);
-            this.BPG.Controls.Add(this.MaleradioButton1);
+            this.BPG.Controls.Add(this.RadioFemale);
+            this.BPG.Controls.Add(this.RadioMale);
             this.BPG.Location = new System.Drawing.Point(508, 80);
             this.BPG.Name = "BPG";
             this.BPG.Size = new System.Drawing.Size(280, 100);
@@ -154,26 +157,26 @@ namespace BusPass
             this.BPG.TabStop = false;
             this.BPG.Text = "Gender";
             // 
-            // FemaleradioButton
+            // RadioFemale
             // 
-            this.FemaleradioButton.AutoSize = true;
-            this.FemaleradioButton.Location = new System.Drawing.Point(96, 70);
-            this.FemaleradioButton.Name = "FemaleradioButton";
-            this.FemaleradioButton.Size = new System.Drawing.Size(87, 24);
-            this.FemaleradioButton.TabIndex = 1;
-            this.FemaleradioButton.Text = "Female";
-            this.FemaleradioButton.UseVisualStyleBackColor = true;
+            this.RadioFemale.AutoSize = true;
+            this.RadioFemale.Location = new System.Drawing.Point(96, 70);
+            this.RadioFemale.Name = "RadioFemale";
+            this.RadioFemale.Size = new System.Drawing.Size(87, 24);
+            this.RadioFemale.TabIndex = 1;
+            this.RadioFemale.Text = "Female";
+            this.RadioFemale.UseVisualStyleBackColor = true;
             // 
-            // MaleradioButton1
+            // RadioMale
             // 
-            this.MaleradioButton1.AutoSize = true;
-            this.MaleradioButton1.Location = new System.Drawing.Point(96, 25);
-            this.MaleradioButton1.Name = "MaleradioButton1";
-            this.MaleradioButton1.Size = new System.Drawing.Size(68, 24);
-            this.MaleradioButton1.TabIndex = 0;
-            this.MaleradioButton1.Text = "Male";
-            this.MaleradioButton1.UseVisualStyleBackColor = true;
-            this.MaleradioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.RadioMale.AutoSize = true;
+            this.RadioMale.Location = new System.Drawing.Point(96, 25);
+            this.RadioMale.Name = "RadioMale";
+            this.RadioMale.Size = new System.Drawing.Size(68, 24);
+            this.RadioMale.TabIndex = 0;
+            this.RadioMale.Text = "Male";
+            this.RadioMale.UseVisualStyleBackColor = true;
+            this.RadioMale.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // BPS
             // 
@@ -209,19 +212,43 @@ namespace BusPass
             // Loginbutton
             // 
             this.Loginbutton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Loginbutton.Location = new System.Drawing.Point(268, 357);
+            this.Loginbutton.Location = new System.Drawing.Point(87, 345);
             this.Loginbutton.Name = "Loginbutton";
             this.Loginbutton.Size = new System.Drawing.Size(182, 57);
             this.Loginbutton.TabIndex = 13;
-            this.Loginbutton.Text = "Login";
+            this.Loginbutton.Text = "Add";
             this.Loginbutton.UseVisualStyleBackColor = false;
             this.Loginbutton.Click += new System.EventHandler(this.Loginbutton_Click);
+            // 
+            // dtgcustomer
+            // 
+            this.dtgcustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgcustomer.Location = new System.Drawing.Point(813, 19);
+            this.dtgcustomer.Name = "dtgcustomer";
+            this.dtgcustomer.RowHeadersWidth = 62;
+            this.dtgcustomer.RowTemplate.Height = 28;
+            this.dtgcustomer.Size = new System.Drawing.Size(575, 395);
+            this.dtgcustomer.TabIndex = 14;
+            this.dtgcustomer.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgcustomer_RowEnter);
+            // 
+            // deletebutton
+            // 
+            this.deletebutton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.deletebutton.Location = new System.Drawing.Point(351, 345);
+            this.deletebutton.Name = "deletebutton";
+            this.deletebutton.Size = new System.Drawing.Size(182, 57);
+            this.deletebutton.TabIndex = 15;
+            this.deletebutton.Text = "Delete";
+            this.deletebutton.UseVisualStyleBackColor = false;
+            this.deletebutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // BusPassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1400, 450);
+            this.Controls.Add(this.deletebutton);
+            this.Controls.Add(this.dtgcustomer);
             this.Controls.Add(this.Loginbutton);
             this.Controls.Add(this.BPS);
             this.Controls.Add(this.BPG);
@@ -243,6 +270,7 @@ namespace BusPass
             this.BPG.PerformLayout();
             this.BPS.ResumeLayout(false);
             this.BPS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgcustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,12 +290,14 @@ namespace BusPass
         private System.Windows.Forms.TextBox BPA;
         private System.Windows.Forms.TextBox BPLN;
         private System.Windows.Forms.GroupBox BPG;
-        private System.Windows.Forms.RadioButton MaleradioButton1;
-        private System.Windows.Forms.RadioButton FemaleradioButton;
+        private System.Windows.Forms.RadioButton RadioMale;
+        private System.Windows.Forms.RadioButton RadioFemale;
         private System.Windows.Forms.GroupBox BPS;
         private System.Windows.Forms.RadioButton UnMarriedradioButton;
         private System.Windows.Forms.RadioButton MarriedradioButton;
         private System.Windows.Forms.Button Loginbutton;
+        private System.Windows.Forms.DataGridView dtgcustomer;
+        private System.Windows.Forms.Button deletebutton;
     }
 }
 
